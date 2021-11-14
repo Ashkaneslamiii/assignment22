@@ -12,6 +12,7 @@ result = np.zeros((row,col), dtype = "uint8")
 for pic in list:
     result += img//16
 
+cv2.imwrite("result.jpg" , result)
 cv2.imshow("result", result)
 cv2.waitKey()
     
